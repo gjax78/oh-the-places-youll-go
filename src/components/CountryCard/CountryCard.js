@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './CountryCard.css'
+import './CountryCard.css';
 
 const CountryCard = () => {
   <div className='country-card'>
@@ -8,4 +8,4 @@ const CountryCard = () => {
   </div>
 }
 
-export default CountryCard
+export default CountryCard;
