@@ -5,7 +5,7 @@ import { Route, Link } from 'react-router-dom';
 const Header = () => {
   return (
     <div className='header'>
-      <button className='dream-destinations'>Dream Destinations</button>
+      <button className='dream-destinations-button'>Dream Destinations</button>
     </div>
   )
 }
