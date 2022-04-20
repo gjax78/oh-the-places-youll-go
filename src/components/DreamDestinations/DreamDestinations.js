@@ -7,7 +7,7 @@ import CountryCard from '../CountryCard/CountryCard'
 const DreamDestinations = ({ dreamDestination }) => {
   const dreamCountries = dreamDestination.map(dreamCountry => {
     return (
-      <div>
+      <div className='dream-destinations'>
         <CountryCard
           {...dreamCountry}
         />
