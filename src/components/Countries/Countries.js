@@ -8,6 +8,7 @@ const Countries = ({ countries }) => {
       <div className='countryCard-container' key={country.cca2}>
         <CountryCard
           id={country.cca2}
+          flag={country.flags.svg}
           name={country.name.common}
           population={country.population}
           region={country.region}

@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+html, body {
+  font-family: 'Didact Gothic', sans-serif;
+  background: url('https://cdn.wallpapersafari.com/89/46/txmrM7.gif');
+  background-attachment: fixed;
+}
+
+button {
+  cursor: pointer;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +45,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,11 +1,17 @@
 import './Header.css';
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import suitcase from './suitcase.png'
 
 const Header = () => {
   return (
-    <div className='header'>
-      <button className='dream-destinations-button'>Dream Destinations</button>
+    <div className='header-wrapper'>
+      <div>
+        <button className='dream-destinations-button'><img src={suitcase} className='suitcase'/></button>
+      </div>
+      <div className='header'>
+        <h1 className='header-title'>OH THE PLACES YOU'LL GO</h1>
+      </div>
     </div>
   )
 }
