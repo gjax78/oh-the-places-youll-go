@@ -10,17 +10,15 @@ const Search = ({ getSearch }) => {
   }
 
   return (
-    <section className='search'>
-      <form>
+      <form className='form-search'>
         <input
         type='text'
         className='controlled-search'
-        placeholder='Search countries'
+        placeholder='Search destinations'
         value={text}
         onChange={(e) => onChange(e)}
         />
       </form>
-    </section>
   )
 }
 
