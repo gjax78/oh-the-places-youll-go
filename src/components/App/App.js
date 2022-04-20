@@ -8,6 +8,7 @@ import fetchData from '../../apiCalls';
 
 const App = () => {
   const [countries, setCountries] = useState([])
+  const [dreamDestination, setDreamDestination] = useState([])
 
   const fetchCountries = () => {
     fetchData.getData()
@@ -18,11 +19,18 @@ const App = () => {
     fetchCountries()
   }, [])
 
+  const addCountryToDreamDestinations = (favoritedCountry) => {
+    setDreamDestination([...dreamDestination, favoritedCountry])
+  }
+
   return (
     <Switch>
       <Route exact path='/'>
         <Header />
-        <Countries countries={countries}/>
+        <Countries
+        countries={countries}
+        addCountryToDreamDestinations={addCountryToDreamDestinations}
+        />
       </Route>
 
       <Route exact path='/dream-destinations'>
