@@ -1,7 +1,7 @@
 .countryCard-container {
-  margin-top: 5%;
   text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 2%;
 }
