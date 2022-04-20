@@ -1,0 +1,12 @@
+.controlled-search {
+  font-family: 'Didact Gothic', sans-serif;
+  height: 30px;
+  width: 20%;
+  border-radius: 45px;
+  border: 1px solid grey;
+  margin: 2% auto;
+  display: block;
+  padding-left: 2%;
+  color: #4A6A90;
+  cursor: pointer;
+}
