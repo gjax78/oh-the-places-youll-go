@@ -9,11 +9,9 @@ const Countries = ({ countries }) => {
         <CountryCard
           id={country.cca2}
           name={country.name.common}
-          capital={country.capital}
+          population={country.population}
           region={country.region}
-          subregion={country.subregion}
-          language={country.languages}
-          maps={country.maps}
+          maps={country.maps.googleMaps}
         />
       </div>
     )
