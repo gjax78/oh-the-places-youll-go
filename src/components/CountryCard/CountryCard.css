@@ -43,5 +43,10 @@ a, p {
 
 .country-information-container {
   color: #2E537F;
-  margin: 5%; 
+  margin: 5%;
+}
+
+.pink {
+  height: 30px;
+  width: 30px;
 }
