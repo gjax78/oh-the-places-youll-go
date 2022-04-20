@@ -6,7 +6,6 @@ import Countries from '../Countries/Countries'
 import DreamDestinations from '../DreamDestinations/DreamDestinations'
 import fetchData from '../../apiCalls';
 
-
 const App = () => {
   const [countries, setCountries] = useState([])
 
