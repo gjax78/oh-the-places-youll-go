@@ -3,11 +3,16 @@
   background-color: #2E537F;
   color: #FFFFFF;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 
+.header-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .header-title {
-  text-align: center;
 }
 
 .dream-destinations-button {
