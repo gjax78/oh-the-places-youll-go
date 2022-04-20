@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Countries.css';
 import CountryCard from '../CountryCard/CountryCard'
 
-const Countries = ({ countries }) => {
+const Countries = ({ countries, addCountryToDreamDestinations }) => {
   const countryCards = countries.map(country => {
     return (
       <div className='countryCard-container' key={country.cca2}>
@@ -13,6 +13,7 @@ const Countries = ({ countries }) => {
           population={country.population}
           region={country.region}
           maps={country.maps.googleMaps}
+          addCountryToDreamDestinations={addCountryToDreamDestinations}
         />
       </div>
     )
