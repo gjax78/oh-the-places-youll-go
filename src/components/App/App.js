@@ -34,7 +34,7 @@ const App = () => {
       </Route>
 
       <Route exact path='/dream-destinations'>
-        <DreamDestinations />
+        <DreamDestinations dreamDestination={dreamDestination}/>
       </Route>
     </Switch>
   )
