@@ -1,0 +1,27 @@
+.header {
+  height: 100px;
+  background-color: #2E537F;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.dream-destinations-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  color: transparent;
+  border: none;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+
+.suitcase {
+  height: 30px;
+  width: 30px;
+}
