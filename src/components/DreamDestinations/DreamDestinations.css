@@ -1,0 +1,7 @@
+.dream-destinations {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

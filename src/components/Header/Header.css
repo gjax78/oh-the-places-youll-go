@@ -3,11 +3,24 @@
   background-color: #2E537F;
   color: #FFFFFF;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 
-.header-title {
-  text-align: center;
+.header-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.home-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  color: transparent;
+  border: none;
+  position: absolute;
+  top: 3%;
+  left: 90%;
 }
 
 .dream-destinations-button {
@@ -22,6 +35,11 @@
 }
 
 .suitcase {
+  height: 30px;
+  width: 30px;
+}
+
+.home {
   height: 30px;
   width: 30px;
 }
