@@ -1,0 +1,14 @@
+.flag-image {
+  height: 20%;
+  width: 20%;
+}
+
+.country-card {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
