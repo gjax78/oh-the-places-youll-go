@@ -4,7 +4,7 @@ import heart from './heart.png'
 import heartPink from './heartPink.png'
 
 
-const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, region, maps }) => {
+const CountryCard = ({ addCountryToDreamDestinations, removeFavoritedCountryFromView, name, flag, population, region, maps, id }) => {
   const [isFavorited, setIsFavorited] = useState(false)
 
   const addCountry = () => {
@@ -15,7 +15,8 @@ const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, re
         flag: flag,
         population: population,
         region: region,
-        maps: maps
+        maps: maps,
+        id: id
       }
       addCountryToDreamDestinations(favoritedCountry)
     } else {
@@ -24,6 +25,7 @@ const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, re
   }
 
   return (
+    (!isFavorited) ?
     <div className='country-card'>
       <div className='country-name-header'>
         <h1 className='country-name'>{name}</h1>
@@ -31,7 +33,7 @@ const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, re
           <button className='add-to-destinations-button'
                   onClick={() => addCountry()}
           >
-          {isFavorited ? <img src={heartPink} className='pink'/> : <img src={heart}/>}
+          {isFavorited ? <img src={heartPink} className='pink'/> : null }
           </button>
         </div>
       </div>
@@ -42,6 +44,7 @@ const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, re
         <a href={maps}>Google Maps</a>
       </div>
     </div>
+  : null
   )
 }
 
