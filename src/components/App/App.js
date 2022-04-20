@@ -26,7 +26,7 @@ const App = () => {
   return (
     <Switch>
       <Route exact path='/'>
-        <Header />
+      <Header />
         <Countries
         countries={countries}
         addCountryToDreamDestinations={addCountryToDreamDestinations}
@@ -34,6 +34,7 @@ const App = () => {
       </Route>
 
       <Route exact path='/dream-destinations'>
+        <Header />
         <DreamDestinations dreamDestination={dreamDestination}/>
       </Route>
     </Switch>
