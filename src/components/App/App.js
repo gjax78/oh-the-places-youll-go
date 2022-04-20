@@ -23,7 +23,7 @@ const App = () => {
     <Switch>
       <Route exact path='/'>
         <Header />
-        <Countries />
+        <Countries countries={countries}/>
       </Route>
 
       <Route exact path='/dream-destinations'>
