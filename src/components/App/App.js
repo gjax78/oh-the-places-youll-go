@@ -40,7 +40,6 @@ const App = () => {
 
   return (
     <Switch>
-    {error && <Redirect to='/error' />}
       <Route exact path='/'>
       <Header />
         <Search getSearch={(e) => setSearch(e)}/>
@@ -54,11 +53,12 @@ const App = () => {
         <Header />
         <DreamDestinations dreamDestination={dreamDestination}/>
       </Route>
-      <Route exact path='/error'>
-              <Error
-                error={ error }
-                />
-        </Route>
+      <Route >
+        <Redirect to='/error' />
+        <Error
+          error={ error }
+        />
+      </Route>
     </Switch>
   )
 }
