@@ -24,14 +24,11 @@ const App = () => {
           } else if ({ search }) {
             setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
           }
-
         } catch(error) {
-          console.log(error.message)
           setError(error.message)
         }
       }
       fetchItems()
-
   }, [search])
 
   const addCountryToDreamDestinations = (favoritedCountry) => {
@@ -48,7 +45,6 @@ const App = () => {
         addCountryToDreamDestinations={addCountryToDreamDestinations}
         />
       </Route>
-
       <Route exact path='/dream-destinations'>
         <Header />
         <DreamDestinations dreamDestination={dreamDestination}/>
