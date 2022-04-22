@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './Countries.css';
+import PropTypes from 'prop-types';
 import CountryCard from '../CountryCard/CountryCard'
 
-const Countries = ({ countries, addCountryToDreamDestinations, removeFavoritedCountryFromView }) => {
+const Countries = ({ countries, addCountryToDreamDestinations }) => {
   const countryCards = countries.map(country => {
     return (
       <div className='countryCard-container' key={country.cca2}>
@@ -27,3 +28,8 @@ const Countries = ({ countries, addCountryToDreamDestinations, removeFavoritedCo
 }
 
 export default Countries;
+
+Countries.propTypes = {
+  countries: PropTypes.array.isRequired,
+  addCountryToDreamDestinations: PropTypes.func.isRequired
+}

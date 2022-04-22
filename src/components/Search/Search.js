@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Search.css'
+import PropTypes from 'prop-types';
 
 const Search = ({ getSearch }) => {
   const [text, setText] = useState('')
@@ -23,3 +24,7 @@ const Search = ({ getSearch }) => {
 }
 
 export default Search
+
+Search.propTypes = {
+  getSearch: PropTypes.func
+}
