@@ -10,3 +10,9 @@
   color: #4A6A90;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .controlled-search {
+    width: 40%;
+  }
+}
