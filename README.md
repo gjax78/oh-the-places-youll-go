@@ -1,7 +1,7 @@
 # Oh The Places You'll Go...💭
 Are you a disorganized, but passionate world traveler?! Countless hours spent daydreaming about all the destinations you want to visit but no single place to keep them organized?
 
-<strong>[Oh The Places You'll Go]()</strong> is the application for you. Upon visiting the app, all world countries will be displayed for you. Feel free to scroll or search through the destinations and 'favorite' them along the way. Pack your bags, and click on the suitcase icon in the upper left-hand corner to view all of your dream destinations. Happy traveling!
+<strong>[Oh The Places You'll Go](https://ohtheplaces.herokuapp.com/)</strong> is the application for you. Upon visiting the app, all world countries will be displayed for you. Feel free to scroll or search through the destinations and 'favorite' them along the way. Pack your bags, and click on the suitcase icon in the upper left-hand corner to view all of your dream destinations. Happy traveling!
 
 ![gif](https://user-images.githubusercontent.com/88151743/164915254-94348e60-193f-4648-bbac-0872be19ce8c.gif)
 
@@ -59,7 +59,7 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 
 
 ### Installation
-- Deployed site [here]()
+- Deployed site [here](https://ohtheplaces.herokuapp.com/)
 
 To view the code:
 - Clone down the Repository
@@ -81,7 +81,7 @@ To view the code:
 ### Scaling
 - CI/CD
 - Feature a login page to store user data
-- Incorporate a journal entry spot so users can have a place to jot travel notes down 
+- Incorporate a journal entry spot so users can have a place to jot travel notes down
 - Implement a secondary API for additional country information
 - Add a 'been there' page so users can add destinations they've already visited
 
