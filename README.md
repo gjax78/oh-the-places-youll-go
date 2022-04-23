@@ -53,6 +53,9 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
       - __Search__
         - [Search.css](src/components/Search/Search.css)
         - [Search.js](src/components/Search/Search.js)
+      - __Spinner__
+        - [Spinner.css](src/components/Spinner/Spinner.css)
+        - [Spinner.js](src/components/Spinner/Spinner.js)
     - [apiCalls.js](src/apiCalls.js)
     - [index.css](src/index.css)
     - [index.js](src/index.js)
@@ -72,6 +75,7 @@ To view the code:
 - Users can 'favorite' and 'unfavorite' a destination
 - Users can search destinations
 - 100% Lighthouse Accessibility score
+- Loading symbol shows as site is fetching data
 - Responsive Design
 - Error handling
 
