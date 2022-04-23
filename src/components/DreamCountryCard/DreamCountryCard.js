@@ -1,6 +1,5 @@
 import React from 'react'
 import './DreamCountryCard.css'
-import trash from './trash.png'
 
 const DreamCountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestinations, name, flag, population, region, maps, id }) => {
 
@@ -11,11 +10,12 @@ const DreamCountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestin
         <div className='delete-button-container'>
           <button
           className='delete-button'
+          aria-label="delete-from-dream-destinations"
           onClick={() => removeFromDreamDestinations(id)}>
           </button>
         </div>
       </div>
-      <img src={flag} className='flag-image'/>
+      <img src={flag} className='flag-image' alt='country-flag'/>
       <div className='country-information-container'>
         <p>population: {population}</p>
         <p>{region}</p>
