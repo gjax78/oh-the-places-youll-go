@@ -25,6 +25,7 @@ const App = () => {
             setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
           }
         } catch(error) {
+          console.log(error.message)
           setError(error.message)
         }
       }
@@ -37,9 +38,6 @@ const App = () => {
 
   return (
     <Switch>
-
-    {!error &&
-      <>
       <Route exact path='/'>
       <Header />
         <Search getSearch={(e) => setSearch(e)}/>
@@ -52,9 +50,6 @@ const App = () => {
         <Header />
         <DreamDestinations dreamDestination={dreamDestination}/>
       </Route>
-      </>
-    }
-    {error &&
       <Route >
         <Redirect to='/error' />
         <Header />
@@ -62,7 +57,6 @@ const App = () => {
           error={ error }
         />
       </Route>
-       }
     </Switch>
   )
 }
