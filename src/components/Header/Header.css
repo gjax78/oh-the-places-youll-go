@@ -7,6 +7,13 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 500px) {
+  .header-title {
+    font-size: 24px;
+    margin: auto;
+  }
+}
+
 .header-wrapper {
   display: flex;
   flex-direction: column-reverse;
@@ -22,6 +29,7 @@
   top: 3%;
   left: 90%;
 }
+
 
 .dream-destinations-button {
   height: 50px;
