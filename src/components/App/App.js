@@ -25,7 +25,6 @@ const App = () => {
             setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
           }
         } catch(error) {
-          console.log(error.message)
           setError(error.message)
         }
       }
@@ -35,6 +34,14 @@ const App = () => {
   const addCountryToDreamDestinations = (favoritedCountry) => {
     setDreamDestination([...dreamDestination, favoritedCountry])
   }
+
+
+   const removeFromDreamDestinations = (favoritedCountry) => {
+      const filteredCountries = dreamDestination.filter(country => country.id != favoritedCountry);
+
+      setDreamDestination(filteredCountries);
+    }
+
 
   return (
     <Switch>
@@ -48,7 +55,9 @@ const App = () => {
       </Route>
       <Route exact path='/dream-destinations'>
         <Header />
-        <DreamDestinations dreamDestination={dreamDestination}/>
+        <DreamDestinations
+        dreamDestination={dreamDestination}
+        removeFromDreamDestinations={removeFromDreamDestinations}/>
       </Route>
       <Route >
         <Redirect to='/error' />
