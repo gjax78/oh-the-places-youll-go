@@ -71,6 +71,7 @@ To view the code:
 ### Features
 - Users can 'favorite' and 'unfavorite' a destination
 - Users can search destinations
+- 100% Lighthouse Accessibility score
 - Responsive Design
 - Error handling
 
