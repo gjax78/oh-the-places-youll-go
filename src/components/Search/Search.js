@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Search.css'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const Search = ({ getSearch }) => {
   const [text, setText] = useState('')
@@ -11,19 +11,19 @@ const Search = ({ getSearch }) => {
   }
 
   return (
-      <form className='form-search'>
-        <input
-        type='text'
-        className='controlled-search'
-        placeholder='Search destinations'
-        value={text}
-        onChange={(e) => onChange(e)}
-        />
-      </form>
+    <form className='form-search'>
+      <input
+      type='text'
+      className='controlled-search'
+      placeholder='Search destinations'
+      value={text}
+      onChange={(e) => onChange(e)}
+      />
+    </form>
   )
 }
 
-export default Search
+export default Search;
 
 Search.propTypes = {
   getSearch: PropTypes.func

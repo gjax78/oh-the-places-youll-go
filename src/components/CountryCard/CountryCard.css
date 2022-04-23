@@ -12,6 +12,7 @@
   align-items: center;
   border-radius: 45px;
   background-color: #DEE6EE;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .country-name-header {
@@ -44,6 +45,7 @@ a, p {
   margin-top: 50%;
   margin-left: 40%;
 }
+
 .add-to-destinations-button:hover {
   background: url(heartPink.png) no-repeat;
   transform: scale(1.2);

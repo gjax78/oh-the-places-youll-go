@@ -5,6 +5,18 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-title {
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .header-title {
+    font-size: 24px;
+    margin: auto;
+  }
 }
 
 .header-wrapper {
@@ -21,7 +33,9 @@
   position: absolute;
   top: 3%;
   left: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 
 .dream-destinations-button {
   height: 50px;
@@ -32,6 +46,18 @@
   position: absolute;
   top: 3%;
   left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .home-button {
+    top: 14%;
+    left: 83%;
+  }
+  .dream-destinations-button {
+    top: 14%;
+    left: 5%;
+  }
 }
 
 .suitcase {

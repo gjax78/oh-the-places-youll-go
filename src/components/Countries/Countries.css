@@ -5,3 +5,9 @@
   flex-wrap: wrap;
   padding: 2%;
 }
+
+@media screen and (max-width: 500px) {
+  .countryCard-container {
+    justify-content: center;
+  }
+}

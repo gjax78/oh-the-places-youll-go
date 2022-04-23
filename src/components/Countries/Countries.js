@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import './Countries.css';
-import PropTypes from 'prop-types';
+import React, {useState} from 'react'
+import './Countries.css'
+import PropTypes from 'prop-types'
 import CountryCard from '../CountryCard/CountryCard'
 
-const Countries = ({ countries, addCountryToDreamDestinations }) => {
+const Countries = ({ countries, addCountryToDreamDestinations, removeFromDreamDestinations }) => {
   const countryCards = countries.map(country => {
     return (
       <div className='countryCard-container' key={country.cca2}>
@@ -15,6 +15,7 @@ const Countries = ({ countries, addCountryToDreamDestinations }) => {
           region={country.region}
           maps={country.maps.googleMaps}
           addCountryToDreamDestinations={addCountryToDreamDestinations}
+          removeFromDreamDestinations={removeFromDreamDestinations}
         />
       </div>
     )

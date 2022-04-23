@@ -4,13 +4,18 @@ describe('App inital page load', () => {
       statusCode: 200,
       fixture: 'countries.json'
     })
-    cy.visit('http://localhost:3000/fkjdlaj');
+    cy.visit('http://localhost:3000/dream-destinations');
   })
+
+  it('should click on dream destinations without adding any to the list', () => {
+    cy.get('.dream-destinations-button')
+    .click()
+    })
 
   it('should display an error message', () => {
     cy.get('.error-container')
-     .should('have.text', 'Flight delayed... Please check back later.')
-     .url().should('include', '/error')
+     .should('have.text', 'You haven\'t added any dream destinations. Add some countries to your bucket list!')
+     .url().should('include', '/dream-destinations')
     })
 
     it('should have a header', () => {

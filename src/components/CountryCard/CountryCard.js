@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-import './CountryCard.css';
-import PropTypes from 'prop-types';
-import heart from './heart.png'
+import React, {useState} from 'react'
+import './CountryCard.css'
+import PropTypes from 'prop-types'
 import heartPink from './heartPink.png'
 
 
-const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, region, maps, id }) => {
+const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestinations, name, flag, population, region, maps, id }) => {
   const [isFavorited, setIsFavorited] = useState(false)
 
   const addCountry = () => {
@@ -22,6 +21,7 @@ const CountryCard = ({ addCountryToDreamDestinations, name, flag, population, re
       addCountryToDreamDestinations(favoritedCountry)
     } else {
       setIsFavorited(false)
+      removeFromDreamDestinations(id)
     }
   }
 

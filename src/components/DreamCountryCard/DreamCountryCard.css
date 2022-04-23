@@ -1,0 +1,15 @@
+.delete-button-container {
+  display: flex;
+}
+
+.delete-button {
+  background: url(trash.png) no-repeat;
+  width: 70px;
+  border: none;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+}
