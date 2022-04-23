@@ -9,3 +9,7 @@
   margin-top: 40%;
   margin-left: 40%;
 }
+
+.delete-button:hover {
+  transform: scale(1.1);
+}
