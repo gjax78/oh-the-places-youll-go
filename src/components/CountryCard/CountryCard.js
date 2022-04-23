@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import './CountryCard.css';
-import PropTypes from 'prop-types';
-import heart from './heart.png'
+import React, {useState} from 'react'
+import './CountryCard.css'
+import PropTypes from 'prop-types'
 import heartPink from './heartPink.png'
 
 

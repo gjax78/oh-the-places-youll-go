@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import React, { useState, useEffect } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import Header from '../Header/Header'
@@ -7,7 +7,7 @@ import DreamDestinations from '../DreamDestinations/DreamDestinations'
 import Search from '../Search/Search'
 import Error from '../Error/Error'
 import DreamDestinationsError from '../DreamDestinationsError/DreamDestinationsError'
-import fetchData from '../../apiCalls';
+import fetchData from '../../apiCalls'
 
 const App = () => {
   const [countries, setCountries] = useState([])

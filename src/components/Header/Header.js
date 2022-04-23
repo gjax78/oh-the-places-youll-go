@@ -1,6 +1,6 @@
 import './Header.css'
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import suitcase from './suitcase.png'
 import home from './home.png'
 

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import './Countries.css';
-import PropTypes from 'prop-types';
+import React, {useState} from 'react'
+import './Countries.css'
+import PropTypes from 'prop-types'
 import CountryCard from '../CountryCard/CountryCard'
 
 const Countries = ({ countries, addCountryToDreamDestinations, removeFromDreamDestinations }) => {
