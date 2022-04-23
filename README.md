@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Oh The Places You'll Go...💭
+Are you a disorganized, but passionate world traveler?! Countless hours spent daydreaming about all the destinations you want to visit but no single place to keep them organized?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<strong>[Oh The Places You'll Go]()</strong> is the application for you. Upon visiting the app, all world countries will be displayed for you. Feel free to scroll or search through the destinations and 'favorite' them along the way. Pack your bags, and click on the suitcase icon in the upper left-hand corner to view all of your dream destinations. Happy traveling!
 
-## Available Scripts
+![gif](https://user-images.githubusercontent.com/88151743/164915254-94348e60-193f-4648-bbac-0872be19ce8c.gif)
 
-In the project directory, you can run:
+### Table of Contents
+- [Abstract](#oh-the-places-youll-go)
+- [Technologies](#technologies)
+- [Code Architecture](#code-architecture)
+- [Installation](#installation)
+- [Features](#features)
+- [Scaling](#scaling)
+- [Author](#author)
 
-### `npm start`
+### Technologies
+- React.js
+- React Router
+- CSS
+- HTML
+- Cypress
+- RESTful APIs
+- Figma
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Code Architecture
+  - __src__
+    - __Components__
+      - __App__
+        - [App.css](src/App/App.css)
+        - [App.js](src/App/App.js)
+      - __Countries__
+        - [Countries.css](src/components/Countries/Countries.css)
+        - [Countries.js](src/components/Countries/Countries.js)
+      - __CountryCard__
+        - [CountryCard.css](src/components/CountryCard/CountryCard.css)
+        - [CountryCard.js](src/components/CountryCard/CountryCard.js)
+      - __DreamCountryCard__
+        - [DreamCountryCard.css](src/components/DreamCountryCard/DreamCountryCard.css)
+        - [DreamCountryCard.js](src/components/DreamCountryCard/DreamCountryCard.js)
+      - __DreamDestinations__
+        - [DreamDestinations.css](src/components/DreamDestinations/DreamDestinations.css)
+        - [DreamDestinations.js](src/components/DreamDestinations/DreamDestinations.js)
+      - __DreamDestinationsError__
+        - [DreamDestinationsError.css](src/components/DreamDestinationsError/DreamDestinationsError.css)
+        - [DreamDestinationsError.js](src/components/DreamDestinationsError/DreamDestinationsError.js)
+      - __Error__
+        - [Error.css](src/components/Error/Error.css)
+        - [Error.js](src/components/Error/Error.js)
+      - __Header__
+        - [Header.css](src/components/Header/Header.css)
+        - [Header.js](src/components/Header/Header.js)
+      - __Search__
+        - [Search.css](src/components/Search/Search.css)
+        - [Search.js](src/components/Search/Search.js)
+    - [apiCalls.js](src/apiCalls.js)
+    - [index.css](src/index.css)
+    - [index.js](src/index.js)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Installation
+- Deployed site [here]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To view the code:
+- Clone down the Repository
+- cd into repository
+- run `npm install`
+- run `npm start`
+- webpage will open in separate browser
 
-### `npm run build`
+### Features
+- Users can 'favorite' and 'unfavorite' a destination
+- Users can search destinations
+- Responsive Design
+- Error handling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![gif](https://user-images.githubusercontent.com/88151743/164915370-40141c39-1065-4471-8289-e95d4860a64e.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![gif](https://user-images.githubusercontent.com/88151743/164915440-c80deb0c-439e-401d-838f-81c3e5a9986d.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Scaling
+- CI/CD
+- Feature a login page to store user data
+- Incorporate a journal entry spot so users can have a place to jot travel notes down 
+- Implement a secondary API for additional country information
+- Add a 'been there' page so users can add destinations they've already visited
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Author
+- [Geena Jackson](https://github.com/gjax78)
