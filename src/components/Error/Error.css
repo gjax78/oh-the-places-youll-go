@@ -1,5 +1,6 @@
 .error-container {
   display: flex;
+  justify-content: center;
   text-align: center;
   height: 50%;
   width: 40%;
