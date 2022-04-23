@@ -1,5 +1,4 @@
 import React from 'react'
-import './DreamDestinationsError.css'
 
 const DreamDestinationsError = () => {
   return (
