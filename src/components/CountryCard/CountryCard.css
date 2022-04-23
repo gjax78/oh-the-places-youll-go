@@ -44,8 +44,8 @@ a, p {
   border: none;
   margin-top: 50%;
   margin-left: 40%;
-
 }
+
 .add-to-destinations-button:hover {
   background: url(heartPink.png) no-repeat;
   transform: scale(1.2);
