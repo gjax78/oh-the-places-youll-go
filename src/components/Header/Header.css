@@ -42,6 +42,17 @@
   left: 5%;
 }
 
+@media screen and (max-width: 575px) {
+  .home-button {
+    top: 14%;
+    left: 83%;
+  }
+  .dream-destinations-button {
+    top: 14%;
+    left: 5%;
+  }
+}
+
 .suitcase {
   height: 30px;
   width: 30px;
