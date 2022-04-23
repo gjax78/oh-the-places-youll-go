@@ -16,20 +16,20 @@ const App = () => {
   const [error, setError] = useState('')
 
   useEffect(() => {
-      const fetchItems = async () => {
-        try {
-          const countriesResult = await fetchData.getData()
+    const fetchItems = async () => {
+      try {
+        const countriesResult = await fetchData.getData()
 
-          if ({search} === null) {
-            setCountries(countriesResult)
-          } else if ({ search }) {
-            setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
-          }
-        } catch(error) {
-          setError(error.message)
+        if ({search} === null) {
+          setCountries(countriesResult)
+        } else if ({ search }) {
+          setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
         }
+      } catch(error) {
+        setError(error.message)
       }
-      fetchItems()
+    }
+    fetchItems()
   }, [search])
 
   const addCountryToDreamDestinations = (favoritedCountry) => {
@@ -37,12 +37,11 @@ const App = () => {
   }
 
 
-   const removeFromDreamDestinations = (favoritedCountry) => {
-      const filteredCountries = dreamDestination.filter(country => country.id != favoritedCountry);
+  const removeFromDreamDestinations = (favoritedCountry) => {
+    const filteredCountries = dreamDestination.filter(country => country.id != favoritedCountry);
 
-      setDreamDestination(filteredCountries);
-    }
-
+    setDreamDestination(filteredCountries);
+  }
 
   return (
     <Switch>
