@@ -8,18 +8,18 @@ describe('App inital page load', () => {
   })
 
   it('should display a header with a button for Home and a button for Dream Destinations', () => {
-    cy.get('*[class^="header"]').first()
+    cy.get('.header').first()
      .should('have.text', 'OH THE PLACES YOU\'LL GO')
-    cy.get('*[class^="home-button"]')
+    cy.get('.home-button')
      .should('be.visible')
-    cy.get('*[class^="dream-destinations-button"]')
+    cy.get('.dream-destinations-button')
       .should('be.visible')
     })
 
     it('should be able to search for a country', () => {
-      cy.get('form input[placeholder="Search destinations"]')
-        .get('form input[type="text"]')
-        .get('*[class^="controlled-search"]')
+      cy.get('form input[placeholder="Search destinations')
+        .get('form input[type="text')
+        .get('.controlled-search')
         .type('Uruguay')
         .should('have.value', 'Uruguay')
     })
