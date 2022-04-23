@@ -9,12 +9,12 @@ const Header = () => {
     <div className='header-wrapper'>
     <Link to='/dream-destinations'>
       <div>
-        <button className='dream-destinations-button'><img src={suitcase} className='suitcase'/></button>
+        <button className='dream-destinations-button' aria-label="dream-destinations"><img src={suitcase} className='suitcase' alt='suitcase'/></button>
       </div>
     </Link>
     <Link to='/'>
       <div>
-        <button className='home-button'><img src={home} className='home'/></button>
+        <button className='home-button' aria-label="home"><img src={home} className='home' alt='home-button'/></button>
       </div>
     </Link>
       <div className='header'>

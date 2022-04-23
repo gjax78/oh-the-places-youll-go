@@ -14,6 +14,7 @@ const App = () => {
   const [dreamDestination, setDreamDestination] = useState([])
   const [search, setSearch] = useState('')
   const [error, setError] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -28,6 +29,7 @@ const App = () => {
       } catch(error) {
         setError(error.message)
       }
+      setIsLoading(false)
     }
     fetchItems()
   }, [search])
@@ -38,7 +40,7 @@ const App = () => {
 
 
   const removeFromDreamDestinations = (favoritedCountry) => {
-    const filteredCountries = dreamDestination.filter(country => country.id != favoritedCountry);
+    const filteredCountries = dreamDestination.filter(country => country.id !== favoritedCountry);
 
     setDreamDestination(filteredCountries);
   }
@@ -49,6 +51,7 @@ const App = () => {
       <Header />
         <Search getSearch={(e) => setSearch(e)}/>
         <Countries
+        isLoading={isLoading}
         countries={countries}
         addCountryToDreamDestinations={addCountryToDreamDestinations}
         />

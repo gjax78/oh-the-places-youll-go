@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Countries.css'
 import PropTypes from 'prop-types'
 import CountryCard from '../CountryCard/CountryCard'
+import Spinner from '../Spinner/Spinner'
 
-const Countries = ({ countries, addCountryToDreamDestinations, removeFromDreamDestinations }) => {
+const Countries = ({ countries, addCountryToDreamDestinations, removeFromDreamDestinations, isLoading }) => {
   const countryCards = countries.map(country => {
     return (
       <div className='countryCard-container' key={country.cca2}>
@@ -21,11 +22,12 @@ const Countries = ({ countries, addCountryToDreamDestinations, removeFromDreamDe
     )
   })
 
-  return (
+  return isLoading ? (
+      <Spinner />
+    ) :
     <div className='countryCard-container'>
       {countryCards}
     </div>
-  )
 }
 
 export default Countries;
