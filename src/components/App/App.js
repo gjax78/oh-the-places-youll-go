@@ -20,24 +20,20 @@ const App = () => {
     const fetchItems = async () => {
       try {
         const countriesResult = await fetchData.getData()
-
-        if ({search} === null) {
-          setCountries(countriesResult)
-        } else if ({ search }) {
-          setCountries(countriesResult.filter(country => country.name.common.toLowerCase().includes(search)))
-        }
+        setCountries(countriesResult)
       } catch(error) {
         setError(error.message)
       }
       setIsLoading(false)
     }
     fetchItems()
-  }, [search])
+  }, [])
+
+  const filteredCountries = countries.filter(country => country.name.common.toLowerCase().includes(search));
 
   const addCountryToDreamDestinations = (favoritedCountry) => {
     setDreamDestination([...dreamDestination, favoritedCountry])
   }
-
 
   const removeFromDreamDestinations = (favoritedCountry) => {
     const filteredCountries = dreamDestination.filter(country => country.id !== favoritedCountry);
@@ -52,7 +48,7 @@ const App = () => {
         <Search getSearch={(e) => setSearch(e)}/>
         <Countries
         isLoading={isLoading}
-        countries={countries}
+        countries={filteredCountries}
         addCountryToDreamDestinations={addCountryToDreamDestinations}
         />
       </Route>
@@ -62,7 +58,8 @@ const App = () => {
         <Header />
         <DreamDestinations
         dreamDestination={dreamDestination}
-        removeFromDreamDestinations={removeFromDreamDestinations}/>
+        removeFromDreamDestinations={removeFromDreamDestinations}
+        />
         </>
         :
         <>
