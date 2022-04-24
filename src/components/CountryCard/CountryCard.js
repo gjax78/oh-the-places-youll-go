@@ -41,7 +41,7 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
       </div>
       <img src={flag} className='flag-image' alt='country-flag'/>
       <div className='country-information-container'>
-        <p>population: {population}</p>
+        <p>population: {population.toLocaleString()}</p>
         <p>{region}</p>
         <p><a href={maps} target='_blank'>Google Maps</a></p>
       </div>
