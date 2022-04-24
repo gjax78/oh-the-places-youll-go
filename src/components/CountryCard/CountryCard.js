@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './CountryCard.css'
 import PropTypes from 'prop-types'
 import heartPink from './heartPink.png'
-
+import heart from './heart.png'
 
 const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestinations, name, flag, population, region, maps, id }) => {
   const [isFavorited, setIsFavorited] = useState(false)
@@ -26,7 +26,6 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
   }
 
   return (
-    (!isFavorited) ?
     <div className='country-card'>
       <div className='country-name-header'>
         <h1 className='country-name'>{name}</h1>
@@ -35,7 +34,7 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
           aria-label="add-to-dream-destinations"
                   onClick={() => addCountry()}
           >
-          {isFavorited ? <img src={heartPink} className='pink' alt='heart'/> : null }
+          {isFavorited ? <img src={heartPink} className='pink' alt='heart'/> : <img src={heart} className='heart' alt='heart'/> }
           </button>
         </div>
       </div>
@@ -46,7 +45,6 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
         <p><a href={maps} target='_blank'>Google Maps</a></p>
       </div>
     </div>
-  : null
   )
 }
 
