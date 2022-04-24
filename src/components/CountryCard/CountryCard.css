@@ -26,6 +26,7 @@
   flex-direction: row;
   justify-content: center;
   font-size: calc(3px + 1vw);
+  align-items: center;
 }
 
 .country-name {
