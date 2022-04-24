@@ -21,7 +21,7 @@ const DreamCountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestin
       <div className='country-information-container'>
         <p>population: {population}</p>
         <p>{region}</p>
-        <a href={maps} target='_blank'>Google Maps</a>
+        <a href={maps} target='_blank' rel="noreferrer">Google Maps</a>
       </div>
     </div>
   )
