@@ -3,13 +3,12 @@
 }
 
 .delete-button {
-  background: url(trash.png) no-repeat;
-  width: 70px;
+  width: 30px;
+  height: 70px;
+  background: none;
   border: none;
-  margin-top: 40%;
-  margin-left: 40%;
 }
 
 .delete-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }

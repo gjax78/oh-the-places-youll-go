@@ -42,7 +42,6 @@ a, p {
 }
 
 .add-to-destinations-button {
-  /* background: url(heart.png) no-repeat; */
   background: none;
   height: 50px;
   width: 50px;
@@ -61,8 +60,6 @@ a, p {
 }
 
 .pink:active {
-  /* margin-top: ; */
-  /* margin-left: 40%; */
   height: 30px;
   width: 30px;
 }
