@@ -29,6 +29,13 @@
   font-size: calc(3px + 1vw);
 }
 
+@media screen and (max-width: 500px) {
+  .country-name-header {
+    font-size: 12px;
+    margin: auto;
+  }
+}
+
 .country-name {
   color: #FFFFFF;
 }

@@ -62,18 +62,6 @@
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media screen and (max-width: 575px) {
-  .home-button {
-    top: 10%;
-    left: 78%;
-  }
-  .dream-destinations-button {
-    top: 14%;
-    left: 75%;
-    color: #2E537F;
-  }
-}
-
 .suitcase {
   height: 20px;
   width: 20px;
@@ -82,4 +70,23 @@
 .home {
   height: 20px;
   width: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .home-button {
+    top: 10%;
+    left: 82%;
+    height: 20px;
+    width: 40px;
+  }
+  .dream-destinations-button {
+    top: 13%;
+    left: 75%;
+    height: 20px;
+    color: #2E537F;
+  }
+  .home {
+    height: 0px;
+    width: 0px;
+  }
 }
