@@ -50,7 +50,7 @@ describe('App inital page load', () => {
         .get('.country-name')
           .contains('Uruguay')
         .get('.country-information-container')
-          .contains('population: 3473727')
+          .contains('population: 3,473,727')
         .get('.country-information-container')
           .contains('Americas')
         .get('.country-information-container')

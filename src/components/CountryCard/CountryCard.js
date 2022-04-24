@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './CountryCard.css'
 import PropTypes from 'prop-types'
-import heartPink from './heartPink.png'
-
+import heartPink from './assets/heartPink.png'
+import heart from './assets/heart.png'
 
 const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestinations, name, flag, population, region, maps, id }) => {
   const [isFavorited, setIsFavorited] = useState(false)
@@ -26,7 +26,6 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
   }
 
   return (
-    (!isFavorited) ?
     <div className='country-card'>
       <div className='country-name-header'>
         <h1 className='country-name'>{name}</h1>
@@ -35,18 +34,17 @@ const CountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestination
           aria-label="add-to-dream-destinations"
                   onClick={() => addCountry()}
           >
-          {isFavorited ? <img src={heartPink} className='pink' alt='heart'/> : null }
+          {isFavorited ? <img src={heartPink} className='pink' alt='heart'/> : <img src={heart} className='heart' alt='heart'/> }
           </button>
         </div>
       </div>
       <img src={flag} className='flag-image' alt='country-flag'/>
       <div className='country-information-container'>
-        <p>population: {population}</p>
+        <p>population: {population.toLocaleString()}</p>
         <p>{region}</p>
-        <p><a href={maps}>Google Maps</a></p>
+        <p><a href={maps} target='_blank' rel="noreferrer">Google Maps</a></p>
       </div>
     </div>
-  : null
   )
 }
 
