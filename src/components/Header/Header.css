@@ -1,10 +1,11 @@
 .header {
-  height: 100px;
+  height: 66.67px;
   background-color: #2E537F;
   color: #FFFFFF;
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -25,47 +26,60 @@
 }
 
 .home-button {
-  height: 50px;
-  width: 50px;
-  border-radius: 45px;
-  color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+  width: 70px;
+  align-items: center;
+  border-radius: 7px;
   border: none;
   position: absolute;
-  top: 3%;
+  top: 1.5%;
   left: 90%;
+  color: #2E537F;
+  font-size: .3em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
 .dream-destinations-button {
-  height: 50px;
-  width: 50px;
-  border-radius: 45px;
-  color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .3em;
+  height: 30px;
+  width: 90px;
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-weight: bold;
   border: none;
+  background: none;
   position: absolute;
-  top: 3%;
-  left: 5%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  top: 1.5%;
+  left: 82%;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media screen and (max-width: 575px) {
   .home-button {
-    top: 14%;
-    left: 83%;
+    top: 10%;
+    left: 78%;
   }
   .dream-destinations-button {
     top: 14%;
-    left: 5%;
+    left: 75%;
+    color: #2E537F;
   }
 }
 
 .suitcase {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .home {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
