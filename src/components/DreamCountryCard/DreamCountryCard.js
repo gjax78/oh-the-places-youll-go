@@ -1,6 +1,6 @@
 import React from 'react'
 import './DreamCountryCard.css'
-import trash from './trash.png'
+import trash from './assets/trash.png'
 
 const DreamCountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestinations, name, flag, population, region, maps, id }) => {
 
@@ -21,7 +21,7 @@ const DreamCountryCard = ({ addCountryToDreamDestinations, removeFromDreamDestin
       <div className='country-information-container'>
         <p>population: {population}</p>
         <p>{region}</p>
-        <a href={maps}>Google Maps</a>
+        <a href={maps} target='_blank'>Google Maps</a>
       </div>
     </div>
   )

@@ -1,8 +1,7 @@
 import './Header.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import suitcase from './suitcase.png'
-import home from './home.png'
+import home from './assets/home.png'
 
 const Header = () => {
   return (
