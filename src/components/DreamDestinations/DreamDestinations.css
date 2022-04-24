@@ -5,3 +5,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 500px) {
+  .dream-destinations {
+    padding-top: 2%;
+  }
+}
