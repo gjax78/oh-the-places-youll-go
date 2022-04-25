@@ -11,7 +11,7 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 - [Code Architecture](#code-architecture)
 - [Installation](#installation)
 - [Features](#features)
-- [Future Additions](#scaling)
+- [Future Additions](#future-additions)
 - [Author](#author)
 
 ### Technologies
