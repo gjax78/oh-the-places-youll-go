@@ -29,7 +29,7 @@ const App = () => {
     fetchItems()
   }, [])
 
-  const filteredCountries = countries.filter(country => country.name.common.toLowerCase().includes(search));
+  const filteredCountries = countries.filter(country => country.name.common.toLowerCase().includes(search) || country.name.common.includes(search));
 
   const addCountryToDreamDestinations = (favoritedCountry) => {
     setDreamDestination([...dreamDestination, favoritedCountry])
