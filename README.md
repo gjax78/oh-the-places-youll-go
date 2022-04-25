@@ -62,14 +62,11 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 
 
 ### Installation
-- Deployed site [here](https://ohtheplaces.herokuapp.com/)
-
-To view the code:
-- Clone down the Repository
-- cd into repository
-- run `npm install`
-- run `npm start`
-- webpage will open in separate browser
+- Run `git clone git@github.com:gjax78/oh-the-places-youll-go.git` in your command line
+- Run `cd oh-the-places-youll-go` to navigate into the repository
+- Run `npm install`
+- Run `npm start`
+- The webpage will open in separate browser
 
 ### Features
 - Users can 'favorite' and 'unfavorite' a destination
