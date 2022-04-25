@@ -6,12 +6,12 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 ![gif](https://user-images.githubusercontent.com/88151743/164987959-9bfcfe06-9c91-44a4-880c-e3f0a9ff0785.gif)
 
 ### Table of Contents
-- [Abstract](#oh-the-places-youll-go)
+- [Overview](#oh-the-places-youll-go)
 - [Technologies](#technologies)
 - [Code Architecture](#code-architecture)
 - [Installation](#installation)
 - [Features](#features)
-- [Scaling](#scaling)
+- [Future Additions](#scaling)
 - [Author](#author)
 
 ### Technologies
