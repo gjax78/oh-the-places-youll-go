@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Search.css'
 import PropTypes from 'prop-types'
 
 const Search = ({ search, setSearch }) => {
-  const [text, setText] = useState('')
 
   const onChange = (e) => {
     setSearch(e.target.value)
@@ -27,5 +26,3 @@ export default Search;
 Search.propTypes = {
   getSearch: PropTypes.func
 }
-
-//avoid derivitive state
