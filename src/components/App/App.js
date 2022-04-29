@@ -6,7 +6,7 @@ import Countries from '../Countries/Countries'
 import DreamDestinations from '../DreamDestinations/DreamDestinations'
 import Search from '../Search/Search'
 import Error from '../Error/Error'
-import DreamDestinationsError from '../DreamDestinationsError/DreamDestinationsError'
+import DreamDestinationsEmptyState from '../DreamDestinationsEmptyState/DreamDestinationsEmptyState'
 import fetchData from '../../apiCalls'
 
 const App = () => {
@@ -42,9 +42,10 @@ const App = () => {
   }
 
   return (
+    <>
+    <Header />
     <Switch>
       <Route exact path='/'>
-      <Header />
         <Search getSearch={(e) => setSearch(e)}/>
         <Countries
         isLoading={isLoading}
@@ -54,7 +55,6 @@ const App = () => {
       </Route>
       <Route exact path='/dream-destinations'>
         <>
-        <Header />
         <DreamDestinations
         dreamDestination={dreamDestination}
         removeFromDreamDestinations={removeFromDreamDestinations}
@@ -63,12 +63,12 @@ const App = () => {
       </Route>
       <Route >
         <Redirect to='/error' />
-        <Header />
         <Error
           error={ error }
         />
       </Route>
     </Switch>
+    </>
   )
 }
 
