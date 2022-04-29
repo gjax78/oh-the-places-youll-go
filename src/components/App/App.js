@@ -53,7 +53,6 @@ const App = () => {
         />
       </Route>
       <Route exact path='/dream-destinations'>
-      {dreamDestination.length ?
         <>
         <Header />
         <DreamDestinations
@@ -61,12 +60,6 @@ const App = () => {
         removeFromDreamDestinations={removeFromDreamDestinations}
         />
         </>
-        :
-        <>
-        <Header />
-        <DreamDestinationsError />
-        </>
-      }
       </Route>
       <Route >
         <Redirect to='/error' />
