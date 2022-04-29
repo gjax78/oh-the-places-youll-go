@@ -2,7 +2,7 @@ import './DreamDestinations.css'
 import React from 'react'
 import PropTypes from 'prop-types'
 import DreamCountryCard from '../DreamCountryCard/DreamCountryCard'
-import DreamDestinationsError from '../DreamDestinationsError/DreamDestinationsError'
+import DreamDestinationsEmptyState from '../DreamDestinationsEmptyState/DreamDestinationsEmptyState'
 
 const DreamDestinations = ({ dreamDestination, removeFromDreamDestinations }) => {
   const dreamCountries = dreamDestination.map(dreamCountry => {
@@ -19,7 +19,7 @@ const DreamDestinations = ({ dreamDestination, removeFromDreamDestinations }) =>
   return (
     <div className='dream-destinations'>
     {dreamCountries.length === 0 ?
-      <DreamDestinationsError />
+      <DreamDestinationsEmptyState />
     : dreamCountries}
     </div>
   )
