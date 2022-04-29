@@ -1,7 +1,7 @@
 # Oh The Places You'll Go...💭
 Are you a disorganized, but passionate world traveler?! Countless hours spent daydreaming about all the destinations you want to visit but no single place to keep them organized?
 
-<strong>[Oh The Places You'll Go](https://ohtheplaces.herokuapp.com/)</strong> is the application for you. Upon visiting the app, all world countries will be displayed for you. Feel free to scroll or search through the destinations and 'favorite' them along the way. Pack your bags and click on the 'Dream Destinations' button in the upper right-hand corner to view all of your favorited destinations. Happy traveling!
+<strong>[Oh The Places You'll Go](https://oh-the-places.netlify.app/)</strong> is the application for you. Upon visiting the app, all world countries will be displayed for you. Feel free to scroll or search through the destinations and 'favorite' them along the way. Pack your bags and click on the 'Dream Destinations' button in the upper right-hand corner to view all of your favorited destinations. Happy traveling!
 
 ![gif](https://user-images.githubusercontent.com/88151743/164987959-9bfcfe06-9c91-44a4-880c-e3f0a9ff0785.gif)
 
