@@ -30,8 +30,6 @@ const App = () => {
 
   const filteredCountries = countries.filter(country => country.name.common.toLowerCase().includes(search) || country.name.common.includes(search));
 
-  console.log({filteredCountries})
-  
   const addCountryToDreamDestinations = (favoritedCountry) => {
     setDreamDestination([...dreamDestination, favoritedCountry])
   }
@@ -52,6 +50,7 @@ const App = () => {
         isLoading={isLoading}
         countries={filteredCountries}
         addCountryToDreamDestinations={addCountryToDreamDestinations}
+        removeFromDreamDestinations={removeFromDreamDestinations}
         />
       </Route>
       <Route exact path='/dream-destinations'>
