@@ -6,7 +6,6 @@ import Countries from '../Countries/Countries'
 import DreamDestinations from '../DreamDestinations/DreamDestinations'
 import Search from '../Search/Search'
 import Error from '../Error/Error'
-import DreamDestinationsEmptyState from '../DreamDestinationsEmptyState/DreamDestinationsEmptyState'
 import fetchData from '../../apiCalls'
 
 const App = () => {
@@ -54,17 +53,15 @@ const App = () => {
         />
       </Route>
       <Route exact path='/dream-destinations'>
-        <>
         <DreamDestinations
         dreamDestination={dreamDestination}
         removeFromDreamDestinations={removeFromDreamDestinations}
         />
-        </>
       </Route>
       <Route >
         <Redirect to='/error' />
         <Error
-          error={ error }
+          error={error}
         />
       </Route>
     </Switch>
