@@ -83,7 +83,7 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 - Responsive Design
 - Error handling
 
-![gif](https://user-images.githubusercontent.com/88151743/164988210-404648f1-298d-454e-a76a-aba001db1361.gif)
+<img src='https://user-images.githubusercontent.com/88151743/175342707-d610113e-5507-44f8-bd18-c144608299bd.gif' width="300" height="450">
 
 ![gif](https://user-images.githubusercontent.com/88151743/164988489-6b987026-743c-47cf-be27-677d8ccd8dbe.gif)
 
