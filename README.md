@@ -14,6 +14,13 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 - [Future Additions](#future-additions)
 - [Author](#author)
 
+### Project Management
+- [GitHub Project Board](https://github.com/gjax78/oh-the-places-youll-go/projects/1)
+- [Figma Wireframe](https://www.figma.com/file/ZFKue5azpogFZSUW7I2WhW/Showcase-Final-Project?node-id=0%3A1)
+- [Code Architecture](https://docs.google.com/document/d/1VS3hkjuQK7S2VtfzWBnVXjZkkXJHOccujJEysMqVp-U/edit)
+- [User Personas](https://docs.google.com/document/d/1Q5vJ0lCA4FZzjFvkRWxJLigtIoNUvgr6uxMUK15qry4/edit)
+- [Project MVP Outline](https://docs.google.com/document/d/1Phzw77LR55EpTIs5Nq-lqIQCqVRIsqrJmZFmwDr9RYk/edit)
+
 ### Technologies
 - React.js
 - React Router
@@ -76,7 +83,7 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 - Responsive Design
 - Error handling
 
-![gif](https://user-images.githubusercontent.com/88151743/164988210-404648f1-298d-454e-a76a-aba001db1361.gif)
+<img src='https://user-images.githubusercontent.com/88151743/175342707-d610113e-5507-44f8-bd18-c144608299bd.gif' width="300" height="450">
 
 ![gif](https://user-images.githubusercontent.com/88151743/164988489-6b987026-743c-47cf-be27-677d8ccd8dbe.gif)
 
