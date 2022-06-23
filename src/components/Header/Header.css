@@ -74,16 +74,16 @@
 
 @media screen and (max-width: 575px) {
   .home-button {
-    top: 10%;
-    left: 82%;
+    top: 1.5%;
+    left: 85.2%;
     height: 20px;
     width: 40px;
   }
   .dream-destinations-button {
-    top: 13%;
-    left: 75%;
+    top: 5%;
+    left: 80%;
     height: 20px;
-    color: #2E537F;
+    color: #FFFFFF;
   }
   .home {
     height: 0px;
