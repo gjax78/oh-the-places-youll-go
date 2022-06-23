@@ -14,6 +14,13 @@ Are you a disorganized, but passionate world traveler?! Countless hours spent da
 - [Future Additions](#future-additions)
 - [Author](#author)
 
+### Project Management
+- [GitHub Project Board](https://github.com/gjax78/oh-the-places-youll-go/projects/1)
+- [Figma Wireframe](https://www.figma.com/file/ZFKue5azpogFZSUW7I2WhW/Showcase-Final-Project?node-id=0%3A1)
+- [Code Architecture](https://docs.google.com/document/d/1VS3hkjuQK7S2VtfzWBnVXjZkkXJHOccujJEysMqVp-U/edit)
+- [User Personas](https://docs.google.com/document/d/1Q5vJ0lCA4FZzjFvkRWxJLigtIoNUvgr6uxMUK15qry4/edit)
+- [Project MVP Outline](https://docs.google.com/document/d/1Phzw77LR55EpTIs5Nq-lqIQCqVRIsqrJmZFmwDr9RYk/edit)
+
 ### Technologies
 - React.js
 - React Router
